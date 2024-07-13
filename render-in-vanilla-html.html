@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- !!SHOULD BE OPENED WITH `npx serve .` IF OPENED LOCALLY!! -->
+<!-- JS FILES CANNOT BE LOADED FROM LOCAL HTML FILES. -->
+<script src="dist/my-lib.umd.cjs"></script>
+<link type="text/css" rel="stylesheet" href="dist/style.css">
+<div id="my-custom-render"></div>
+<script>
+    MyLib.start(document.getElementById("my-custom-render"));
+</script>
+</body>
+</html>
